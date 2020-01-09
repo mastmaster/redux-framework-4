@@ -169,7 +169,7 @@ if ( ! class_exists( 'Redux_Import_Export', false ) ) {
 		public function enqueue() {
 			wp_enqueue_script(
 				'redux-extension-import-export-js',
-				$this->url . 'redux-import-export' . Redux_Functions::is_min() . '.js',
+				$this->url . '/import_export/redux-import-export' . Redux_Functions::is_min() . '.js',
 				array( 'jquery', 'redux-js' ),
 				Redux_Extension_Import_Export::$version,
 				true
@@ -177,7 +177,7 @@ if ( ! class_exists( 'Redux_Import_Export', false ) ) {
 
 			wp_enqueue_style(
 				'redux-import-export',
-				$this->url . 'redux-import-export.css',
+				$this->url . '/import_export/redux-import-export.css',
 				array(),
 				Redux_Extension_Import_Export::$version,
 				'all'
